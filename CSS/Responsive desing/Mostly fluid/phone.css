@@ -1,0 +1,21 @@
+.container {
+    justify-content: center;
+    align-items: center;
+  }
+  .box1 {
+    width: 100%;
+  }
+  .box2 {
+    width: 45%;
+  }
+  .box3 {
+    width: 45%;
+  }
+
+  .box4 {
+    width: 75%;
+  }
+
+  .box5 {
+    width: 100%;
+  }

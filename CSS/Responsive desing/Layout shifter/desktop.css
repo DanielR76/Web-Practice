@@ -1,0 +1,27 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box1 {
+  height: 100vh;
+  width: 30%;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 40%;
+}
+
+.box3,
+.box4 {
+  height: 50%;
+}
+
+.box5 {
+  width: 25%;
+  height: 100vh;
+  width: 30%;
+}
