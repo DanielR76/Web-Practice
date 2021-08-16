@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Explain</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <form action="">
+                <label for="nombre">
+                    <span>¿Cual es tu nombre?</span>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" autocomplete="name"
+                        required />
+                </label>
+                <label for="correo">
+                    <span>¿Cual es tu correo?</span>
+                    <input type="email" id="correo" placeholder="correo" autocomplete="email" required />
+                </label>
+                <label for="inicio-platzi">
+                    <span>¿Que día comenzaste en Platzi?</span>
+                    <input type="date" id="inicio-platzi" />
+                </label>
+                <label for="horario">
+                    <span>¿En que horario estudias?</span>
+                    <input type="time" id="horario" />
+                </label>
+                <input type="submit">
+            </form>
+
+        </section>
+        <section>
+            <label>
+                <span>Clasico seleccionar </span>
+                <select name="Ciudades" placeholder="Seleccione ciudad">
+                    <option value="" disabled key="">Seleccione</option>
+                    <option value="Bogotá" key="Bogotá">Bogotá</option>
+                    <option value="Medellin" key="Medellin">Medellin</option>
+                    <option value="Cali" key="Cali">Cali</option>
+                </select>
+            </label>
+            <label>
+                <span>Nuevo seleccionar</span>
+                <input list="Ciudades" />
+                <datalist id="Ciudades">
+                    <option value="Bogotá" key="Bogotá"></option>
+                    <option value="Medellin" key="Medellin"></option>
+                    <option value="Cali" key="Cali"></option>
+                </datalist>
+            </label>
+        </section>
+    </main>
+</body>
+
+</html>
