@@ -74,13 +74,13 @@ figure > img {
 
 .header--container .header--container-button {
   position: absolute;
-  top: 270px;
+  top: 260px;
   display: block;
-  left: calc(50% - 118px);
+  left: calc(50% - 113px);
   margin: 25px 0 0 0;
   padding: 15px;
   height: 48px;
-  width: 219px;
+  width: 230px;
   background-color: var(--just-white);
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border-radius: 4px;
@@ -89,4 +89,156 @@ figure > img {
   line-height: 1.8rem;
   text-decoration: none;
   color: var(--black);
+}
+
+main {
+  height: auto;
+  width: 100%;
+  min-width: 320px;
+  background-color: var(--off-white);
+}
+
+.main-enchange {
+  height: auto;
+  width: 100%;
+  padding: 80px 0 30px 0;
+  text-align: center;
+}
+
+.main-enchange--img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  background-image: url("../img/Bitcoin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-enchange--text {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.main-enchange--text h2 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+  color: var(--black);
+  margin-bottom: 25px;
+}
+
+.main-enchange--text p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+.enchange-table {
+  height: 360px;
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-family: "Inter", sans-serif;
+}
+
+.enchange-table .enchange-table--moneyTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  margin-top: 25px;
+  color: var(--bitcoin-orange);
+}
+
+.enchange-table .enchange-table--container {
+  height: 250px;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.enchange-table--container table {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.enchange-table--container td {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+  background-color: var(--just-white);
+}
+
+.enchange-table--container .enchange-table__top--left {
+  border-radius: 15px 0 0 0;
+}
+
+.enchange-table--container .enchange-table__top--right {
+  border-radius: 0 15px 0 0;
+}
+
+.enchange-table--container .enchange-table__bottom--right {
+  border-radius: 0 0 15px 0;
+}
+
+.enchange-table--container .enchange-table__bottom--left {
+  border-radius: 0 0 0 15px;
+}
+
+.enchange-table--container .table__right {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  color: #757575;
+}
+
+.table__right span {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.trending__ethereum {
+  background-image: url("../img/trending-up.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.trending__bitcoin,
+.trending__ripple,
+.trending__stellar {
+  background-image: url("../img/trending-down.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.enchange-table--date {
+  height: 31px;
+  width: 173px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: var(--soft-orange);
+}
+
+.enchange-table--date span {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--warm-black);
 }
