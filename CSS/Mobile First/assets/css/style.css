@@ -14,6 +14,7 @@ Otros
   --warm-black: #282623;
   --black: #201e1c;
   --grey: #bababa;
+  --grey-other: #757575;
   --off-white: #faf8f7;
   --just-white: #fff;
   --gradient-header: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
@@ -135,7 +136,7 @@ main {
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 500;
-  color: #757575;
+  color: var(--grey-other);
 }
 
 .enchange-table {
@@ -180,19 +181,23 @@ main {
   background-color: var(--just-white);
 }
 
-.enchange-table--container .enchange-table__top--left {
+.enchange-table--container .enchange-table__top--left,
+.commission-table--container .commission-table__top--left {
   border-radius: 15px 0 0 0;
 }
 
-.enchange-table--container .enchange-table__top--right {
+.enchange-table--container .enchange-table__top--right,
+.commission-table--container .commission-table__top--right {
   border-radius: 0 15px 0 0;
 }
 
-.enchange-table--container .enchange-table__bottom--right {
+.enchange-table--container .enchange-table__bottom--right,
+.commission-table--container .commission-table__bottom--right {
   border-radius: 0 0 15px 0;
 }
 
-.enchange-table--container .enchange-table__bottom--left {
+.enchange-table--container .enchange-table__bottom--left,
+.commission-table--container .commission-table__bottom--left {
   border-radius: 0 0 0 15px;
 }
 
@@ -200,7 +205,7 @@ main {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
-  color: #757575;
+  color: var(--grey-other);
 }
 
 .table__right span {
@@ -241,4 +246,149 @@ main {
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: var(--warm-black);
+}
+
+.commission-table {
+  height: auto;
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.commission-table .commission-table--moneyTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--secondary-blue);
+}
+
+.commission-table .commission-table--container {
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.commission-table--container table {
+  width: 100%;
+  height: 240px;
+}
+
+.commission-table td {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+  background-color: var(--warm-black);
+}
+
+.commission-table--container .commission-table--date {
+  width: 173px;
+  padding: 10px 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #e7f5ff;
+}
+
+.commission-table--date span {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.main-product {
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-width: 320px;
+  padding: 20px 10px;
+  background-color: var(--black);
+}
+
+.main-product .main-product-icon {
+  position: absolute;
+  height: 24px;
+  width: 40px;
+  background-image: url("../icons/batata.svg");
+  top: -10px;
+  left: calc(50% - 20px);
+}
+
+.main-product .main-product-text {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.main-product-text h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  margin-bottom: 25px;
+  color: var(--just-white);
+}
+
+.main-product-text p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin-bottom: 23px;
+  color: #808080;
+}
+
+.product-cards {
+  width: 100%;
+  min-width: 288px;
+  max-width: 400px;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 4px;
+  background-color: var(--warm-black);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-cards .product-cards-icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-cards .clock {
+  background-image: url("../icons/clock.svg");
+}
+
+.product-cards .eye {
+  background-image: url("../icons/eye.svg");
+}
+
+.product-cards .dollar {
+  background-image: url("../icons/dollar-sign.svg");
+}
+
+.product-cards .check {
+  background-image: url("../icons/check-circle.svg");
+}
+
+.product-cards .product-cards-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+  margin-bottom: 15px;
+}
+
+.product-cards .product-cards-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+  margin-bottom: 15px;
 }
