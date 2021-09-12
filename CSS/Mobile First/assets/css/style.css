@@ -451,9 +451,9 @@ main {
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 15px;
-  background-color: (--just-white);
+  background-color: var(--just-white);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
@@ -468,6 +468,65 @@ main {
   border-radius: 8px;
   background-color: var(--bitcoin-orange);
   font-size: 1.2rem;
-  font-weight: bold;
   color: var(--just-white);
+  font-weight: bold;
 }
+
+.card-content .card-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin: 20px 0;
+}
+
+.card-price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 5.2rem;
+  font-weight: bold;
+}
+
+.card-price .money {
+  font-size: 1.2rem;
+}
+
+.card-description {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--grey-other);
+}
+
+.card-button {
+  /* padding: 8px; */
+  height: 48px;
+  width: 150px;
+  background-color: #faf8f7;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+
+.card-button span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: text-bottom;
+  background-image: url(../icons/orange-right-arrow.svg);
+}
+
+.card-button:hover {
+  cursor: pointer;
+}
+
+.card-button:active {
+  color: var(--just-white);
+  background-color: var(--bitcoin-orange);
+}
+
