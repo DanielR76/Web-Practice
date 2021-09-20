@@ -93,6 +93,17 @@ figure > img {
   color: var(--black);
 }
 
+.header--container-button span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: top;
+  background-image: url("../icons/keyboard_arrow_down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 main {
   height: auto;
   width: 100%;
@@ -140,13 +151,21 @@ main {
   color: var(--grey-other);
 }
 
+.enchange-cards {
+  margin: 20px 0;
+  height: 350px;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
 .enchange-table {
-  height: 360px;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 35px;
+  scroll-snap-align: center;
   font-family: "Inter", sans-serif;
 }
 
@@ -233,7 +252,6 @@ main {
 }
 
 .enchange-table--date {
-  height: 31px;
   width: 173px;
   margin: 0 auto;
   margin-top: 20px;
@@ -250,12 +268,11 @@ main {
 }
 
 .commission-table {
-  height: auto;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 15px;
+  scroll-snap-align: center;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -267,6 +284,7 @@ main {
 }
 
 .commission-table .commission-table--container {
+  height: 250px;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
@@ -275,8 +293,9 @@ main {
 }
 
 .commission-table--container table {
+  height: 100%;
   width: 100%;
-  height: 240px;
+  border-radius: 4px;
 }
 
 .commission-table td {
@@ -292,7 +311,7 @@ main {
   width: 173px;
   padding: 10px 0;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 20px;
   border-radius: 8px;
   background-color: #e7f5ff;
 }
@@ -438,11 +457,12 @@ main {
   color: var(--grey-other);
 }
 
-.plans-title .slider-card {
-  height: auto;
-  width: 80%;
-  min-width: 288px;
-  max-width: 400px;
+.slider-card {
+  height: 316px;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 
 .slider-card .plans-card {
@@ -451,7 +471,8 @@ main {
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 30px auto;
+  scroll-snap-align: center;
+  margin: 30px 12px;
   padding: 15px;
   background-color: var(--just-white);
   border-radius: 8px;
@@ -501,7 +522,6 @@ main {
 }
 
 .card-button {
-  /* padding: 8px; */
   height: 48px;
   width: 150px;
   background-color: #faf8f7;
@@ -530,3 +550,72 @@ main {
   background-color: var(--bitcoin-orange);
 }
 
+footer {
+  width: 100%;
+  min-width: 320px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bitcoin-orange);
+}
+
+.footer-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-section ul li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: var(--just-white);
+}
+
+.footer-image {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-image img {
+  margin: 7px 0;
+  height: 24px;
+  width: 41px;
+}
+.footer-image span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+@media (min-width: 930px) {
+  .slider-card {
+    width: 920px;
+    margin: 0 auto;
+  }
+
+  .product-card-cotainer {
+    width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
