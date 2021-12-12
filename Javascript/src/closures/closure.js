@@ -20,6 +20,6 @@ const closure = () => {
 
 let newValue = closure();
 
-newValue(5);
-newValue(10);
-newValue(15);
+newValue(5); //5
+newValue(10); //15
+newValue(15); //30
