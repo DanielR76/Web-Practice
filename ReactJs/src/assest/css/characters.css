@@ -8,6 +8,8 @@
 }
 
 .card__unique {
+	display: inline-block;
+	height: 50px;
 	width: 25%;
 	min-width: 100px;
 	margin: 3px;
@@ -17,6 +19,6 @@
 }
 
 .dark {
-    color: white;
-    background-color: #3b3a30;
+	color: white;
+	background-color: #3b3a30;
 }

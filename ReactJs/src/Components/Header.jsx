@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Characters from "./Characters";
+import ThemeContext from "../context/ThemeContext";
+
 const Header = () => {
+	const { theme, setTheme } = useContext(ThemeContext);
 	const [darkMode, setDarkMode] = useState(true);
-	const handleTheme = () => setDarkMode(!darkMode);
+	const handleTheme = () => {
+		setDarkMode(!darkMode);
+		setTheme(!theme);
+	};
 	return (
 		<div>
 			<button type="button" onClick={handleTheme}>{`Is ${
