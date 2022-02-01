@@ -1,13 +1,7 @@
 import React from "react";
-import {
-	useState,
-	useEffect,
-	useReducer,
-	useRef,
-	useMemo,
-	useCallback,
-} from "react";
+import { useState, useReducer, useRef, useMemo, useCallback } from "react";
 import Search from "./Search";
+import useFetch from "../hooks/useFetch";
 
 import classNames from "classnames";
 import "../assest/css/characters.css";
@@ -29,17 +23,11 @@ const favoriteReducer = (state, action) => {
 };
 
 const Characters = ({ darkMode }) => {
-	const [characters, setCharacters] = useState([]);
 	const [favorites, dispatch] = useReducer(favoriteReducer, initialState);
 	const [search, setSearch] = useState("");
 	const darkClass = classNames({ dark: darkMode });
 	const refSearch = useRef(null);
-
-	useEffect(() => {
-		fetch("https://rickandmortyapi.com/api/character")
-			.then((response) => response.json())
-			.then((data) => setCharacters(data.results));
-	}, []);
+	const characters = useFetch("https://rickandmortyapi.com/api/character");
 
 	const handleClick = (fav) => {
 		dispatch({ type: "ADD_FAVORITE", payload: fav });
@@ -51,7 +39,7 @@ const Characters = ({ darkMode }) => {
 
 	const filteredUsers = useMemo(() => {
 		return characters.filter((element) =>
-			element.name.toLowerCase().includes(search?.toLowerCase())
+			element?.name.toLowerCase().includes(search?.toLowerCase())
 		);
 	}, [characters, search]);
 

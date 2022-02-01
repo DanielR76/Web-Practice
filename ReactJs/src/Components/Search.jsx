@@ -13,4 +13,4 @@ const Search = ({ search, refSearch, handleSearch }) => {
 	);
 };
 
-export default Search;
+export default React.memo(Search);
