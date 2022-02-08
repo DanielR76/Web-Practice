@@ -1,14 +1,15 @@
 {
-  "name": "tailwind",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Daniel",
-  "license": "ISC",
-  "devDependencies": {
-    "tailwindcss": "^3.0.18"
-  }
+	"name": "tailwind",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css"
+	},
+	"author": "Daniel",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.0.18"
+	}
 }
