@@ -1,0 +1,76 @@
+section {
+	display: flex;
+	flex-direction: row;
+}
+
+section .person {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+}
+
+.person__head {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: #fbab7e;
+	background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+.person__body {
+	height: 200px;
+	width: 150px;
+	background-color: #8bc6ec;
+	background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+
+.person__legs {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.person__legs--left {
+	position: absolute;
+	left: 18px;
+	height: 200px;
+	width: 75px;
+	background: #000000;
+	transform: skewX(10deg);
+	outline: 1px solid #fff;
+}
+
+.person__legs--right {
+	position: absolute;
+	left: -93px;
+	height: 200px;
+	width: 75px;
+	background: #000000;
+	transform: skewX(-10deg);
+	outline: 1px solid #fff;
+}
+
+.person__legs--right:active {
+	left: 9px;
+	transform: skew(40deg);
+}
+
+.ball {
+	position: relative;
+}
+
+.ball__hit {
+	position: absolute;
+	bottom: -200px;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background-color: #85ffbd;
+	background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+.ball__hit:active {
+	transform: translate(300px, -300px);
+}
