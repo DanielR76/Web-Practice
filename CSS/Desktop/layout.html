@@ -9,15 +9,35 @@
 	</head>
 	<body>
 		<header class="header">
-			<figure class="header__image">
-				<img /> <span>Aqui va la descripción</span>
-			</figure>
-			<ul class="header__list">
-				<li>Home</li>
-				<li>Cursos</li>
-				<li>Instructores</li>
-				<li>Blog</li>
-			</ul>
+			<figure class="header__image"><img /> <span>Aqui va la descripción</span></figure>
+			<div>
+				<ul class="header__list">
+					<li class="header__list--home list">Home</li>
+					<li class="header__list--cursos list">
+						Cursos
+						<ul class="modules">
+							<li>Español</li>
+							<li>Ingles</li>
+							<li>
+								Matematicas
+								<ul class="submodules">
+									<li>Algebra</li>
+									<li>Derivadas</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="header__list--instructores list">
+						Instructores
+						<ul class="modules">
+							<li>Andrea</li>
+							<li>Juan</li>
+							<li>Camila</li>
+						</ul>
+					</li>
+					<li class="list">Blog</li>
+				</ul>
+			</div>
 		</header>
 		<div class="main">
 			<aside class="sidebar">
@@ -28,15 +48,12 @@
 			</aside>
 			<section class="content">
 				<span class="content__info"
-					>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-					reprehenderit aliquid impedit quidem dicta quaerat soluta delectus
-					eius modi nihil corporis, beatae tempora dolore sunt voluptatibus ipsa
-					inventore. Nulla, repudiandae!</span
+					>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae reprehenderit aliquid
+					impedit quidem dicta quaerat soluta delectus eius modi nihil corporis, beatae tempora
+					dolore sunt voluptatibus ipsa inventore. Nulla, repudiandae!</span
 				>
 			</section>
 		</div>
-		<footer class="footer">
-			<span>Aqui va el primero</span><span>Aqui va el segundo</span>
-		</footer>
+		<footer class="footer"><span>Aqui va el primero</span><span>Aqui va el segundo</span></footer>
 	</body>
 </html>

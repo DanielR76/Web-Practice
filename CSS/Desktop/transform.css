@@ -50,6 +50,7 @@ section .person {
 	background: #000000;
 	transform: skewX(-10deg);
 	outline: 1px solid #fff;
+	transition: all 1s;
 }
 
 .person__legs--right:active {
@@ -69,8 +70,12 @@ section .person {
 	border-radius: 50%;
 	background-color: #85ffbd;
 	background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+	transition: transform 1.5s ease-out;
+	transition-delay: 1s;
 }
 
 .ball__hit:active {
 	transform: translate(300px, -300px);
+	transition: transform 0.5s ease-out;
+	transition-delay: 2s;
 }
